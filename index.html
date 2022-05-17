@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon Spotify - Inicio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+    <!-- Header -> logotipo, menu navegacion, barra de busqueda, iconos -->
+    <header class="header">
+        <a class="header__marca" href="index.html">
+            <img class="header__logo" src="imagenes/logotipo-blanco.svg" alt="logotipo spotify" width="120" height="32">
+        </a>
+
+        <a href="#lateral" class="header__open">
+            <span class="jam jam-menu"></span>
+        </a>
+        <!-- Nav -> representa el contenedor de mi futuro menu de navegacion -->
+        <nav class="nav" id="lateral">
+            <ul class="nav__lista">
+                <li class="nav__item">
+                    <a class="nav__enlace" href="index.html">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__enlace" href="pages/premium.html">Premium</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__enlace" href="pages/ayuda.html">Ayuda</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__enlace" href="pages/descargar.html">Descargar</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__enlace" href="pages/spotify.html">Spotify</a>
+                </li>
+                <li class="nav__item nav__item--close">
+                    <a class="nav__enlace" href="#"><span class="jam jam-close"></span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -> representa el contenido principal a mostrar -->
+    <main>
+        <section class="seccion2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <p class="seccion2__subtitulo">Spotify Premium</p>
+                        <h2 class="seccion2__titulo">Obten 3 meses de premium gratis</h2>
+                        <p class="seccion2__eslogan">Disfruta de música sin anuncios, reproduccion en modo offline y mucho más. Cancela cuando uieras.</p>
+                        <a class="seccion2__enlace text-decoration-none" href="#">Obtener 3 meses gratis</a>
+                        <p class="seccion2__terminos">Solo para el plan Individual. ***Después, cuesta $ 279,00 al mes + impuestos aplicables (IVA [21%], PAIS [8%], IG/IBP [35%], que verás en tu extracto bancario). <a target="_blank" href="https://www.spotify.com/legal/premium-promotional-offer-terms">Se aplican Términos y Condiciones</a>. La oferta termina el 19 de mayo de 2022.</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img class="seccion2__img" src="imagenes/ilustracion-new.jpg" alt="Ilustracion de 3 meses gratis" width="200" height="200">
+                    </div>
+                </div>
+              </div>
+        </section>
+
+        <section class="seccion1">
+            <h1 class="seccion1__titulo">SPOTIFY FREE</h1>
+
+            <h2 class="seccion1__subtitulo">Escuchar es todo</h2>
+            <p class="seccion1__parrafo">Millones de canciones y podcasts. No necesitas tarjeta de crédito.</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -> representa el contenido final a mostrar -->
+    
+    <footer class="footer">
+        <div class="footer__contacto">
+            <h2>Contacto</h2>
+            <div class="footer__redes">
+                <span class="jam jam-twitch"></span>
+                <span class="jam jam-facebook-square"></span>
+                <span class="jam jam-twitter"></span>
+            </div>
+        </div>
+        <div class="footer__marca">
+            <img class="footer__logo" src="./imagenes/logotipo-blanco.svg" alt="logotipo spotify" width="120" height="32">
+            <p class="footer__texto">Derechos Reservados - <span>Spotify</span></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
