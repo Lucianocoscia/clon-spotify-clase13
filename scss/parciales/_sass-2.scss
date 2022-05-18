@@ -61,16 +61,16 @@ $estilos: (
     padding: 1rem
 );
 
-div {
-    background-color: map-get($estilos,color);
-    text-align: map-get($estilos,centro);
-    padding: map-get($estilos,padding) *5 ;
-    font-size: map-get($estilos, tfuente);
-}
+// div {
+//     // background-color: map-get($estilos,color);
+//     text-align: map-get($estilos,centro);
+//     padding: map-get($estilos,padding) *5 ;
+//     font-size: map-get($estilos, tfuente);
+// }
 
-.leo {
-    background-color: map-get($estilos,color);
-}
+// .leo {
+//     background-color: map-get($estilos,color);
+// }
 
 /* Extend */
 .boton {
@@ -110,10 +110,10 @@ div {
 .box-medium {
     @include sizes(200px,200px);
 }
-.box-big {
-    @include sizes(500px,500px);
-    background-color: orange;
-}
+// .box-big {
+//     @include sizes(500px,500px);
+//     background-color: orange;
+// }
 
 
 @mixin generarFlex($direction, $eje-principal, $eje-secundario){
@@ -123,10 +123,10 @@ div {
     align-items: $eje-secundario;
 }
 
-.premium {
-    @include generarFlex(column, center, center);
-}
+// .premium {
+//     @include generarFlex(column, center, center);
+// }
 
-.ayuda {
-    @include generarFlex(row, flex-start, center)
-}
+// .ayuda {
+//     @include generarFlex(row, flex-start, center)
+// }

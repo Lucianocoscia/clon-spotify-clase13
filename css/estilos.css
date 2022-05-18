@@ -95,17 +95,6 @@
 }
 
 /* Otra forma de usar un mapa */
-div {
-  background-color: orange;
-  text-align: center;
-  padding: 5rem;
-  font-size: 35px;
-}
-
-.leo {
-  background-color: orange;
-}
-
 /* Extend */
 .boton, .boton--aceptar, .boton--cancelar {
   width: 200px;
@@ -138,26 +127,6 @@ div {
 .box-medium {
   height: 200px;
   width: 200px;
-}
-
-.box-big {
-  height: 500px;
-  width: 500px;
-  background-color: orange;
-}
-
-.premium {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.ayuda {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 /* 
