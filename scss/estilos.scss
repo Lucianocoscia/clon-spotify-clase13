@@ -2,7 +2,11 @@
 /* Importando todos los parciales de mis estilos */
 
 /* Aclaracion es importante el orden de importacion */
+
+@import "parciales/_sass-2.scss";
+
 @import "parciales/_variables.scss";
+
 @import "parciales/_parcial1.scss";
 @import "parciales/_header.scss";
 @import "parciales/_seccion1.scss";
@@ -12,3 +16,4 @@
 @import "parciales/_genders.scss";
 @import "parciales/_extras.scss";
 @import "parciales/_media-querys.scss";
+

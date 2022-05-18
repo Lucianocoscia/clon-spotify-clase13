@@ -1,0 +1,132 @@
+$modo: claro;
+$theme-color: transparent;
+
+
+
+@if $modo == claro {
+/* Codigo CSS que ya conozco aca */
+$theme-color: transparent;
+} @else if $modo == oscuro {
+/* Codigo CSS que ya conozco aca */
+$theme-color: Black;
+}
+
+.sass-2 {
+    color: $theme-color;
+
+}
+
+/* Bucles */
+/* For */
+
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        width: (100% / 12) * $i;
+    }
+}
+
+@each $color in blue, yellow, black {
+    .#{$color} {
+        background-color: #{$color};;
+    }
+}
+
+/* Usando mapas y el each */
+// $mapa: (
+//     // clave1: valor;
+//     // clave2: valor;
+//     // clave3: valor;
+// )
+
+$redes: (/* Declaramos nusetro mapa (array asociativo o un objeto)*/
+twitter: #55acee,
+facebook: #3a5795,
+instagram: #c25e30,
+whatsapp: green,
+otro:orange
+);
+
+@each $clave, $valor in $redes { /* Usando el mapa */
+    .btn-#{$clave} {
+        background-color: $valor;
+    }
+}
+
+/* Otra forma de usar un mapa */
+$estilos: (
+    color: orange,
+    centro:center,
+    tfuente: 35px,
+    padding: 1rem
+);
+
+div {
+    background-color: map-get($estilos,color);
+    text-align: map-get($estilos,centro);
+    padding: map-get($estilos,padding) *5 ;
+    font-size: map-get($estilos, tfuente);
+}
+
+.leo {
+    background-color: map-get($estilos,color);
+}
+
+/* Extend */
+.boton {
+    width:200px;
+    height:50px;
+    background-color:white;
+    text-align:center;
+    color:black;
+    border-radius:20px;
+    border:1px solid black;
+
+    &--aceptar{
+        @extend .boton;
+        background-color:green;
+        color:yellow;
+        }
+        &--cancelar{
+        @extend .boton;
+        background-color:red;
+        color:yellow;
+        }
+
+}
+/* MIXIN */
+/* Declaramos primero el mixing */
+
+// @mixin nombreMixing($parametro1,$parametro2,....){..}
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+.box-small {
+    @include sizes(100px,100px);
+    background-color: navy;
+}
+.box-medium {
+    @include sizes(200px,200px);
+}
+.box-big {
+    @include sizes(500px,500px);
+    background-color: orange;
+}
+
+
+@mixin generarFlex($direction, $eje-principal, $eje-secundario){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $eje-principal;
+    align-items: $eje-secundario;
+}
+
+.premium {
+    @include generarFlex(column, center, center);
+}
+
+.ayuda {
+    @include generarFlex(row, flex-start, center)
+}
